@@ -1,93 +1,87 @@
 % !TEX program = xelatex
-% Resume by ice1000
 
-\documentclass{resume}
+\documentclass[10pt]{resume}
 
-\usepackage{linespacing_fix} % Disable extra space before next section
 \usepackage{geometry}
 \geometry{a4paper, left=1.5cm, right=1.5cm, top=0.9cm, bottom=0.7cm}
-\usepackage{hyperref} % For hyperlinks
+
+\usepackage{hyperref}
+\usepackage{linespacing_fix}
+\usepackage{enumitem}
+\setlist{nosep}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 
 \name{ZIQI XIE}
 
-\basicInfo{\textperiodcentered\
-  \email{zxstardfw@gmail.com} \textperiodcentered\
+\basicInfo{
+  \textperiodcentered\
+  \email{zxstardfw@gmail.com}
+  \textperiodcentered\
   \phone{(+1) 617-820-2833}
 }
 
 \section{Education}
 \datedsubsection{\textbf{Tulane University}, New Orleans, LA}{07/2015 -- 05/2020}
-\textbf{Ph.D. Economics (STEM)}  
+\textbf{Ph.D. Economics (STEM)} \\
 Research Interests: Applied Microeconomics, Corporate Finance, Causal Inference
-
-%\datedsubsection{\textbf{Northeastern University}, Boston, MA}{09/2012 -- 05/2014}
-%\textbf{M.A. Economics}  
-
 
 \section{Experience}
 
-%\datedsubsection{\textbf{Modal Learning}}{10/2023 -- Present}
-%\textbf{Data Advisory Board Member}  
-%\begin{itemize}
-    %\item Provide industry-leading advisory to Modal, an online learning startup, focusing on product development and data strategy.
-%\end{itemize}
-
 \datedsubsection{\textbf{Comerica Bank}}{09/2020 -- Present}
-\textbf{Vice President, Credit Analytics and Strategy}\\
+\textbf{Vice President, Credit Analytics and Strategy} \\
 \textbf{Social Impact Committee Chair (Comerica Asian/Pacific Islander Group)}
+
 \begin{itemize}
-    \item \textbf{Leadership Development Program (Selective Cohort)}  
+\item \textbf{Leadership Development Program (Selective Cohort)}
+  \begin{itemize}
+  \item Selected as one of a highly competitive cohort in the enterprise leadership development program.
+  \item Led a \$5MM strategic initiative to redesign the digital banking application using customer segmentation, behavioral analytics, and cross-sell optimization.
+  \item Presented ROI, growth impact, and governance framework to the Executive Management Committee and C-suite.
+  \end{itemize}
+
+\item \textbf{Advanced Credit Risk Modeling and Capital Analytics}
+  \begin{itemize}
+  \item Designed and monitored Probability of Default (PD), Loss Given Default (LGD), and capital planning stress-testing models.
+  \item Conducted loan-level risk analytics and macroeconomic scenario sensitivity analysis.
+  \item Led SAS-to-Python model migration and production deployment into the Credit Lens platform.
+  \item Developed back-testing, calibration, and stability diagnostics across 10+ industries.
+  \end{itemize}
+
+\item \textbf{Cross-Functional Project Leadership and Innovation}
+  \begin{itemize}
+  \item Led initiatives across fintech partners, wealth management, credit officers, and model developers.
+  \item Delivered:
     \begin{itemize}
-        \item Selected as one of a small, highly competitive cohort for the bank’s enterprise leadership development program. Conceived and led a \$5MM strategic vision initiative to redesign the bank’s digital application ecosystem by integrating customer-need segmentation, behavioral analytics, and cross-sell optimization logic.
-        \item Built a business case covering ROI, customer acquisition uplift, and risk governance, and presented recommendations to the Executive Management Committee and C-suite, influencing long-term digital and product strategy.
+      \item Small-business auto-approval credit models,
+      \item Securities-based lending systems,
+      \item Machine-learning-driven early warning systems.
     \end{itemize}
-    \item \textbf{Advanced Credit Risk Modeling \& Capital Analytics}  
-    \begin{itemize}
-        \item Designed, implemented, and monitored Probability of Default (PD), Loss Given Default (LGD), and Capital Planning stress-testing models supporting regulatory, risk appetite, and portfolio management decisions.
-        \item Conducted loan-level risk analytics and macro-economic sensitivity analysis, developing scenario frameworks linking GDP, unemployment, interest rates, and sector-specific drivers to credit outcomes.
-        \item Led SAS-to-Python model migration in partnership with Technology, productionizing PD/LGD models into the enterprise credit rating platform (Credit Lens) with full documentation, validation, and governance controls.
-        \item Owned ongoing performance monitoring for commercial credit models spanning 10+ industries, developing and enhancing back-testing, calibration, and stability diagnostics in SAS and Python; produced statistical and executive-level reports used by Model Risk Management, senior leadership, and external auditors.
-    \end{itemize}
-    \item \textbf{Cross-Functional Project Leadership \& Innovation}  
-    \begin{itemize}
-        \item Led cross-functional initiatives across fintech partners, wealth management, credit officers, and model development teams to design and deploy data-driven credit solutions.
-        \item Delivered multiple high-impact platforms, including:
-         \begin{itemize}
-         \item A small-business auto-approval credit model integrating policy rules and statistical risk scoring,
-         \item A securities-based lending system combining market risk and credit risk analytics,
-         \item Machine-learning–driven early warning systems for proactive credit risk identification.
-          \end{itemize}
-        \item Translated complex quantitative outputs into actionable insights for senior stakeholders, balancing innovation with regulatory expectations and model governance standards.
-    \end{itemize}
-    \item \textbf{Diversity, Inclusion \& Organizational Leadership}  
-    \begin{itemize}
-        \item Co-founded Comerica’s Asian / Pacific Islander Employee Resource Group, recruiting and leading a 15-member leadership team.
-        \item Scaled the organization to 400+ active members, organizing firm-wide diversity programming, community outreach, and volunteer initiatives aligned with corporate DEI objectives.
-    \end{itemize}
+  \end{itemize}
+
+\item \textbf{Diversity, Inclusion, and Organizational Leadership}
+  \begin{itemize}
+  \item Co-founded the Asian and Pacific Islander Employee Resource Group.
+  \item Built and led a 15-member leadership team.
+  \item Expanded membership to over 400 participants through firm-wide initiatives.
+  \end{itemize}
 \end{itemize}
 
 \section{Dissertation}
 
 \datedsubsection{\textbf{Did dividend tax policy changes increase Chinese financial market stability?}}{}
-\begin{itemize}
-    \item \textbf{Policy Objective}: Evaluated the causal effects of dividend tax policy reforms on firm payout behavior, investment decisions, and financial market stability in China, using comprehensive panel data covering 20,000+ publicly listed firms. The analysis was designed to inform tax policy design and assess unintended consequences for capital allocation and market volatility.
-    \item \textbf{Analytical Approach}: mplemented quasi-experimental causal inference frameworks, including event-study analyses and difference-in-differences (DiD) designs, complemented by matching estimators (propensity score matching, nearest-neighbor, and one-to-one matching) to construct credible counterfactuals and mitigate selection bias.
-    \item \textbf{Policy Relevance & Dissemination:}: Research was supported by competitive fellowships (Tulane SLA Dissertation Fellowship and Laura Bassi Scholarship) and disseminated to policy and academic audiences at major international economics forums, including the American Economic Association, National Tax Association, Southern Economic Association, and Chinese Economists Society annual meetings, contributing to evidence-based discussions on taxation, corporate governance, and financial stability.
-\end{itemize}
 
-%\datedsubsection{\textbf{Impact of health on education and employment: evidence from the NLSY97}}{}
-%\textit{Collaborators: Daniela Rivero Bryant, Lu Yao}  
-%\begin{itemize}
-   % \item \textbf{Objective}: Analyze the relationship between self-reported adolescent health and two key economic outcomes: educational attainment and employment status during early adulthood.
-   % \item \textbf{Methods}: Used data from the National Longitudinal Survey of Youth 1997 (NLSY97); Applied Ordinary Least Squares (OLS), Logit models, and Hazard models (survival analysis).
-%\end{itemize}
+\begin{itemize}
+\item \textbf{Policy Objective}: Evaluated the causal effects of dividend tax reforms on firm behavior and financial market stability using panel data from over 20,000 publicly listed Chinese firms.
+\item \textbf{Analytical Approach}: Implemented event-study and difference-in-differences designs with matching estimators to construct credible counterfactuals.
+\item \textbf{Policy Relevance and Dissemination}: Supported by the Tulane SLA Dissertation Fellowship and Laura Bassi Scholarship; presented findings at the American Economic Association, National Tax Association, Southern Economic Association, and Chinese Economists Society meetings.
+\end{itemize}
 
 \section{Skills}
-\begin{itemize}[parsep=0.25ex]
-    \item \textbf{Coding/System}: AWS Sagemaker, Dremio, Stata, R, SAS (\href{https://www.youracclaim.com/badges/c4bce10e-7398-4203-9d11-f9c6723749a4/linked_in_profile}{SAS Certified Advanced Programmer}), SQL, Python, EViews, Markdown, $L^{A}T_{E}X$.
-    \item \textbf{Experience}: Causal Inference, A/B testing, Machine Learning,  Oracle Hyperion, Tableau (Basic),  Credit risk modeling(PD/LGD), Stress Testing(Time Series models), Microsoft Office Suite, .
+\begin{itemize}
+\item \textbf{Coding and Systems}: AWS SageMaker, Dremio, Stata, R, SAS, SQL, Python, EViews, Markdown, \LaTeX.
+\item \textbf{Experience}: Causal Inference, A/B Testing, Machine Learning, Credit Risk Modeling (PD/LGD), Stress Testing, Oracle Hyperion, Tableau (Basic), Microsoft Office Suite.
 \end{itemize}
-%Financial Datasets (CRSP, CapIQ, Bloomberg Terminal),Research on investment/asset pricing,Healthcare Datasets (IPUMS, NLSY, CDC database)
+
 \end{document}
